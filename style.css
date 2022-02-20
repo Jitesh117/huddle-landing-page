@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --magenta:hsl(300, 69%, 71%);
+
+}
+body{
+    background-color: var(--violet);
+   
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'open sans',sans-serif;
+    font-size: 12px;
+}
+h1{
+    font-family: 'poppins';
+    font-size: 20px;
+}
+button{
+    border: none;
+    border-radius: 25px;
+    color:var(--violet);
+   
+}
+button:hover{
+    cursor: pointer;
+}
+.sm:hover{
+    cursor: pointer;
+}
+#logo:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:400px) {
+    body{
+        background-image: url(./images/bg-mobile.svg);
+    }
+    main{
+        width: 90%;
+        text-align: center;
+        margin: 20px ;
+    }
+    .top{
+       float: left;
+    }
+    #logo{
+        width: 45%;
+        float:left;
+        padding-bottom: 40px;
+    }
+
+    #mockup{
+        width: 100%;
+        
+    }
+    .social{
+        margin-top: 50px;
+    }
+    .sm{
+        width: 30px;
+        ;
+    }
+    button{
+        width: 60%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:401px) {
+    body{
+        background-image: url(./images/bg-desktop.svg);
+    }
+    main{
+        display: flex;
+         width: 90%;
+         margin: 5% 20px;
+    }
+    .top{
+        width: 60%;
+    }
+    .bottom{
+        width: 40%;
+    }
+    #logo{
+        width: 50%;
+    }
+    #mockup{
+        width: 90%;
+    }
+    
+}
